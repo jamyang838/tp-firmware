@@ -1,16 +1,82 @@
 {
-  "schema": 1,
-  "updated": "2026-10-19 16:11",
+  "schema": 2,
+  "updated": "2026-10-19 16:32:35",
+  "target": "20250716_Final",
+  "rules": [],
   "firmwares": [
     {
+      "version": "20250716_Final",
       "model": "TP1210UWDA-BCG_V2_DD",
       "ic": "ILI2520",
       "xch": 40,
       "ych": 24,
-      "version": "20250716_Final",
       "file": "https://raw.githubusercontent.com/jamyang838/tp-firmware/main/TP1210UWDA-BCG_V2_DD_Final_20250716.hex",
       "sha256": "fc4bbd6ecf5420044517507cb13ae76923ca76102d08d5e701ab737b56f11cc0",
-      "notes": ""
+      "blocks": [
+        {
+          "start": "0x3000",
+          "end": "0x1CFA1",
+          "crc": "0x32BC"
+        },
+        {
+          "start": "0x25000",
+          "end": "0x285E1",
+          "crc": "0x33D5"
+        },
+        {
+          "start": "0x29000",
+          "end": "0x2BC81",
+          "crc": "0xFCCE"
+        },
+        {
+          "start": "0x3C000",
+          "end": "0x3C781",
+          "crc": "0x0C08"
+        },
+        {
+          "start": "0x3D000",
+          "end": "0x3DFFF",
+          "crc": "0x87F0"
+        }
+      ],
+      "notes": "2025-07-16 Final 版"
+    },
+    {
+      "version": "20260828_Enlarge",
+      "model": "TP1210UWDA-BCG_V2_DD",
+      "ic": "ILI2520",
+      "xch": 40,
+      "ych": 24,
+      "file": "https://raw.githubusercontent.com/jamyang838/tp-firmware/main/TP1210UWDA-BCG_V2_DD_Enlarge_20260828.hex",
+      "sha256": "2536102f6b55c78e29ae139302006314d0c160a2f7683b11db279cfb3f77692e",
+      "blocks": [
+        {
+          "start": "0x3000",
+          "end": "0x1CFA1",
+          "crc": "0x32BC"
+        },
+        {
+          "start": "0x25000",
+          "end": "0x285E1",
+          "crc": "0x33D5"
+        },
+        {
+          "start": "0x29000",
+          "end": "0x2BC81",
+          "crc": "0xFCCE"
+        },
+        {
+          "start": "0x3C000",
+          "end": "0x3C781",
+          "crc": "0x88DF"
+        },
+        {
+          "start": "0x3D000",
+          "end": "0x3DFFF",
+          "crc": "0x87F0"
+        }
+      ],
+      "notes": "2026-08-28 Enlarge 版（原廠出貨時板上版本）"
     }
   ]
 }
