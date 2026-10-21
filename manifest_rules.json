@@ -1,22 +1,26 @@
 {
   "schema": 2,
-  "updated": "2026-10-19 16:32:35",
+  "updated": "2026-10-21 14:10:16",
+  "settings": {
+    "dailyCheckTime": "02:00",
+    "configUrl": "https://raw.githubusercontent.com/jamyang838/tp-firmware/main/manifest.json"
+  },
   "target": "none",
   "rules": [
     {
       "from": "20260828_Enlarge",
       "to": "20250716_Final",
-      "note": "板上是 Enlarge 版 → 更新為 Final 版"
+      "note": "board has Enlarge, update to Final"
     },
     {
       "from": "20250716_Final",
       "to": "20260828_Enlarge",
-      "note": "板上是 Final 版 → 更新為 Enlarge 版"
+      "note": "board has Final, update to Enlarge"
     },
     {
       "from": "unknown",
       "to": "none",
-      "note": "未知版本不更新"
+      "note": "unknown version, leave as is"
     }
   ],
   "firmwares": [
@@ -26,6 +30,8 @@
       "ic": "ILI2520",
       "xch": 40,
       "ych": 24,
+      "moduleName": "",
+      "fwid": "",
       "file": "https://raw.githubusercontent.com/jamyang838/tp-firmware/main/TP1210UWDA-BCG_V2_DD_Final_20250716.hex",
       "sha256": "fc4bbd6ecf5420044517507cb13ae76923ca76102d08d5e701ab737b56f11cc0",
       "blocks": [
@@ -55,7 +61,7 @@
           "crc": "0x87F0"
         }
       ],
-      "notes": "2025-07-16 Final 版"
+      "notes": "Final release, 2025-07-16"
     },
     {
       "version": "20260828_Enlarge",
@@ -63,6 +69,8 @@
       "ic": "ILI2520",
       "xch": 40,
       "ych": 24,
+      "moduleName": "",
+      "fwid": "",
       "file": "https://raw.githubusercontent.com/jamyang838/tp-firmware/main/TP1210UWDA-BCG_V2_DD_Enlarge_20260828.hex",
       "sha256": "2536102f6b55c78e29ae139302006314d0c160a2f7683b11db279cfb3f77692e",
       "blocks": [
@@ -92,7 +100,7 @@
           "crc": "0x87F0"
         }
       ],
-      "notes": "2026-08-28 Enlarge 版（原廠出貨時板上版本）"
+      "notes": "Enlarge release, 2026-08-28 (factory version)"
     }
   ]
 }
