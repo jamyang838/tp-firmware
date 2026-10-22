@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-10-21 14:17:23",
+  "updated": "2026-10-22 16:31:53",
   "settings": {
     "dailyCheckTime": "02:00",
     "configUrl": "https://raw.githubusercontent.com/jamyang838/tp-firmware/main/manifest.json"
@@ -14,8 +14,8 @@
     },
     {
       "from": "20250716_Final",
-      "to": "20260828_Enlarge",
-      "note": "board has Final, update to Enlarge"
+      "to": "20250716_Final",
+      "note": "board already has Final, keep it"
     },
     {
       "from": "unknown",

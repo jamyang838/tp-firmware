@@ -10,7 +10,7 @@ DD 日後維護的只有兩種檔案：**hex（韌體）** 和 **config（`manif
 | 檔案 | 用途 |
 |---|---|
 | `manifest.json` | **雲端 config**：程式實際讀取的檔案 |
-| `manifest_rules.json` | demo 用：依板上版本互換（Enlarge→Final、Final→Enlarge、未知版本不動） |
+| `manifest_rules.json` | 依板上版本決定：Enlarge→Final（單向），已是 Final 不動，未知版本不動 |
 | `manifest_final.json` | 預備：一律更新為 20250716_Final |
 | `manifest_enlarge.json` | 預備：一律更新為 20260828_Enlarge |
 | `TP1210UWDA-BCG_V2_DD_Final_20250716.hex` | 韌體 20250716_Final |
@@ -78,7 +78,7 @@ DD 日後維護的只有兩種檔案：**hex（韌體）** 和 **config（`manif
 | 正式：所有板子更新到某一版 | `target` 設為該版本，`rules` 留空 |
 | 正式：未知版本不要動 | `rules` 放一條 `{ "from": "unknown", "to": "none" }`，`target` 設正式版本 |
 | 多個機型各自的正式版本 | `modelTargets` 每個機型一行 |
-| demo：兩版互換 | 用 `manifest_rules.json`（`切換到依版本規則.bat`） |
+| 只讓 Enlarge 更新到 Final（目前使用中） | 用 `manifest_rules.json`（`切換到依版本規則.bat`） |
 
 ## 5. 機型辨識：IC 型號 + 軟體名稱
 
@@ -151,7 +151,7 @@ DD 日後維護的只有兩種檔案：**hex（韌體）** 和 **config（`manif
 
 | 工具 | 作用 |
 |---|---|
-| `切換到依版本規則.bat` | manifest.json = 兩版互換（demo） |
+| `切換到依版本規則.bat` | manifest.json = Enlarge→Final 單向（Final 不動） |
 | `切換到Final.bat` / `切換到Enlarge.bat` | manifest.json = 固定目標 |
 | `設定檢查時間.bat` | 輸入 `HH:mm` 或 `off`，只改每日檢查時間 |
 | `產生清單.py` | hex 有變動時重新產生三份預備 config（保留目前的 settings） |
